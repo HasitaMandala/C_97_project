@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>nature art and cool project's from Hasita</title>
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="main.js"></script>
+
+</head>
+<body>
+<h1>nature art</h1>
+<img id="album"src="space.jpeg">
+        <p id="reasontext">Cool drawings</p>
+        <button onclick=nextslide()>Next</button>
+<script>
+            var reasons=["by: Shipa","Mona Lisa"," ","by: Graham Gercken",""];
+            var images=["https://1.bp.blogspot.com/-d6bAgPig4K4/V6oGoIJAxFI/AAAAAAAAH1Q/NQSmbxzZ5EwhOMQOeBo40AWDLIyYcdEOgCLcB/s1600/pink%2Blandscape.jpg","https://4.bp.blogspot.com/_bCTvudG7bnA/TJx3RcrM_mI/AAAAAAAAAGo/CskGRdHtOsc/s1600/Mona_Lisa.jpg","https://www.artranked.com/images/86/8671c11cde6ff8c9a615ae686ef040dd.jpg","https://designyoutrust.com/wp-content/uploads/2017/07/3-73.jpg","https://scottishlandscapepainting.co.uk/wp-content/uploads/2018/12/Skye-Boat-Song-Painting-print-Charlie-Peutherer-WEB.jpg"];
+var i=0;
+function nextslide(){
+  document.getElementById("reasontext").innerHTML=reasons[i];
+  document.getElementById("album").src=images[i];
+  i++;
+}
+</script>
+<h2>do you want to draw?</h2>
+<button onclick="addUser()">draw</button>
+</body>
+</html>
